@@ -7,17 +7,17 @@
 .body {
 	$gutter: minmax(24px, 1fr);
 	$container: minmax(0, map_get($breakpoints, "large"));
-	background-image: url($background-mobile);
-	background-position: center center;
+	background-image: url($background-mobile), url($layer-img);
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: 100%;
 	background-attachment: fixed;
 	@include query("medium") {
-		background-image: url($background-tablet);
+		background-image: url($background-tablet), url($layer-img);
 	}
 	@include query("large") {
-		background-image: url($background-desktop);
+		background-image: url($background-desktop), url($layer-img);
 	}
 	display: grid;
 	grid-template-columns:

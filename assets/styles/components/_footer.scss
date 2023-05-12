@@ -1,7 +1,7 @@
 .footer {
 	@include gridInherit;
 	max-height: 50px;
-	position: fixed;
+	position: relative;
 	bottom: 1em;
 	width: 100vw;
 	padding: 24px;

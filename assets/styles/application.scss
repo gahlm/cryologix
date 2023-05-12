@@ -16,7 +16,10 @@
 
 @import "components/header";
 @import "components/footer";
+@import "components/action";
+
 //views
 @import "views/home";
 
+// includes
 @import "inc/swiper-bundle";

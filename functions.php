@@ -179,3 +179,9 @@ function switch_to_relative_url($html, $id, $caption, $title, $align, $url, $siz
 }
 add_filter('image_send_to_editor','switch_to_relative_url',10,8);
 
+function docusign_signing() {
+   ob_start();
+   include(get_template_directory() . '/templates/docusign.php');
+   return ob_get_clean();
+}
+add_shortcode( 'docusign_signing', 'docusign_signing' );

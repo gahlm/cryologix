@@ -1,0 +1,12 @@
+.action-purple {
+	background-color: $cryo-deep-blue;
+	border-radius: 5px;
+	padding: $spacer-sm $spacer-xxl $spacer-sm $spacer-xxl;
+	color: $color-white;
+	font-weight: $font-bold;
+	cursor: pointer;
+	&:hover {
+		background-color: $cryo-lilac;
+		color: $cryo-deep-blue;
+	}
+}

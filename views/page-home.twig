@@ -1,3 +1,26 @@
 {% extends "base.twig" %}
 
-{% block content %}{% endblock %}
+{% block content %}
+	<div class="home__hero">
+		<div class="home__hero__inner">
+			<div class="intro">
+				{% set intro = post.meta('intro_content') %}
+				<h1>{{intro.heading}}</h1>
+				<div class="content">{{intro.intro_text}}</div>
+			</div>
+			<div class="call-to-action">
+				<h2 class="cta">{{intro.cta_heading}}</h2>
+				<a href="{{intro.button_link}}">
+					<button class="action-purple">{{intro.button_text}}</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="home__forms" id="forms">
+		<div class="home__forms__inner">
+			{% set form = post.meta('form_content') %}
+			<div class="form-intro">{{form.form_intro}}</div>
+			<div class="form-shortcode">{{form.form_shortcode}}</div>
+		</div>
+	</div>
+{% endblock %}
