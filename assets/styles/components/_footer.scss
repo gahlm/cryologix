@@ -1,0 +1,26 @@
+.footer {
+	@include gridInherit;
+	max-height: 50px;
+	position: fixed;
+	bottom: 1em;
+	width: 100vw;
+	padding: 24px;
+	z-index: 30;
+
+	nav {
+		grid-column: container;
+		.footer_nav {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			p {
+				color: $color-white;
+			}
+			a {
+				color: $color-white;
+				font-weight: $font-bold;
+			}
+		}
+	}
+}

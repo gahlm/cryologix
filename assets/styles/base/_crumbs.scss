@@ -1,0 +1,25 @@
+/* Position arrows absolutely and set the correct size */
+.breadcrumbs {
+	margin-bottom: $spacer-md;
+	font-size: $font-size-small;
+
+	&__spacer {
+		padding: 0 $spacer-sm;
+	}
+
+	li {
+		display: inline;
+	}
+
+	a {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	@include query("medium", "max") {
+		display: none;
+	}
+}

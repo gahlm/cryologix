@@ -1,0 +1,22 @@
+// base settings
+@import "base/functions";
+@import "base/variables";
+@import "base/root";
+@import "base/mixins";
+@import "base/query";
+@import "base/base";
+@import "base/typography";
+@import "base/helpers";
+@import "base/layout";
+@import "base/stack";
+@import "base/crumbs";
+@import "base/404";
+
+// components
+
+@import "components/header";
+@import "components/footer";
+//views
+@import "views/home";
+
+@import "inc/swiper-bundle";

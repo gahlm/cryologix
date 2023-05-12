@@ -1,0 +1,26 @@
+:root {
+	// background colors
+	// --bg-light-blue: #{$color-light-blue};
+	--bg-black: #{$color-black};
+	// --bg-true-black: #{$color-true-black};
+	--bg-white: #{$color-white};
+
+	// text colors
+	--text-black: #{$color-black};
+	--text-true-black: #{$color-true-black};
+	--text-white: #{$color-white};
+
+	// action colors
+	--action-text: #{$color-white-t90};
+	--action-black: #{$color-black};
+
+	// font sizes
+	--font-small: #{$font-size-small};
+	--font-body: #{$font-size-body};
+	--font-strong: #{$font-size-body};
+	--font-heading-sm: #{$font-size-heading-sm};
+	--font-heading-md: #{$font-size-heading-md};
+	--font-heading-lg: #{$font-size-heading-lg};
+	--font-heading-xl: #{$font-size-heading-xl};
+	--font-heading-hero: #{$font-size-heading-hero};
+}

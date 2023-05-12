@@ -1,0 +1,19 @@
+.header {
+	@include gridInherit;
+	// position: fixed;
+	width: 100vw;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding-top: var(--navPadding);
+	padding-bottom: var(--navPadding);
+	z-index: $index-header;
+	transition: $transition-nav;
+	nav {
+		grid-column: container;
+		.logo {
+			margin: 1rem 0 1rem 0;
+			max-width: 15rem;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@mixin gridInherit() {
+	display: grid;
+	grid-column: viewport;
+	grid-template-columns: inherit;
+}
+
+.body {
+	$gutter: minmax(24px, 1fr);
+	$container: minmax(0, map_get($breakpoints, "large"));
+	background-image: url($background-mobile);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+	@include query("medium") {
+		background-image: url($background-tablet);
+	}
+	@include query("large") {
+		background-image: url($background-desktop);
+	}
+	display: grid;
+	grid-template-columns:
+		[viewport-start]
+		$gutter
+		[container-start]
+		$container
+		[container-end]
+		$gutter
+		[viewport-end];
+}

@@ -1,0 +1,16 @@
+<div class="contact">
+	<div class="contact__inner">
+		<div class="contact__inner__form" id="contact">
+			<h2 class="contact">Contact</h2>
+			{% if options.form_shortcode %}
+				{{ options.form_shortcode|shortcodes }}
+			{% endif %}
+		</div>
+		<div class="contact__inner__bio">
+			<img class="biopic" src="{{Image(options.bio_pic).src}}" alt="{{options.bio_pic.alt}}">
+			<h2>{{options.about_headline}}</h2>
+			<p>{{options.bio}}</p>
+		</div>
+
+	</div>
+</div>
